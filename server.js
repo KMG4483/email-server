@@ -14,10 +14,10 @@ const transporter = nodemailer.createTransport({
   host: 'smtp.qq.com', // QQ邮箱SMTP服务器地址
   port: 465, // 端口（SSL加密）
   secure: true, // 启用SSL加密
-auth: {
-  user: process.env.QQ_EMAIL, // 从环境变量读取
-  pass: process.env.QQ_AUTH_CODE // 从环境变量读取
-}
+  auth: {
+    user: '2664044927@qq.com', // 发送邮件的QQ邮箱（例如：123456@qq.com）
+    pass: 'arxquoveigzsebja' // SMTP授权码（非QQ密码，需单独获取）
+  }
 });
 
 // 发送邮件的API接口
