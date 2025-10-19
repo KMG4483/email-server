@@ -101,6 +101,6 @@ app.post('/send-email', async (req, res) => {
 // 启动服务器
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`服务器已启动，访问地址：https://zhanghu.page.gd/`);
-  console.log(`请在浏览器中打开 https://zhanghu.page.gd/ 查看网站`);
+  console.log(`服务器已启动，访问地址：http://localhost:${port}`);
+  console.log(`请在浏览器中打开 http://localhost:${port} 查看网站`);
 });
